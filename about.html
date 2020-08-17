@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About page for our advanced software for analysing football matches and training sessions for coaches, players and clubs looking to use stat-based information to improve their team's performance. Also a centre for a coaching community allowing coaches to discuss and share training sessions">
+    <meta name="keywords" content="Football,Analysis,Analytics,Statistics,Stats,Video,Track,Match,Improve,Improvement,Coach,Accurate,Tactics,Intelligent,Train">
+    <meta name="Author" content="Tom Galliford">
+    <title>About Us - Vision Sports Analysis</title>
+    <link href="./css/normalize.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="./css/grid.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+  	<header class="jumbotron">
+
+      <div class="row">
+
+        <div class="grid_4">
+          <h1 class="logo">Vision Sports Analysis</h1> <!-- replace with logo -->
+        </div>
+
+        <div class="grid_2 small-hidden medium-hidden"></div>
+
+        <div class="grid_2">
+          <button class="log-in" onclick="document.getElementById('login').style.display='block'">Login</button>
+        </div>
+
+        <div id="login" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="./img/avatars.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="formContainer">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+
+              <button type="submit">Login</button>
+              
+            </div>
+
+            <div class="formContainer">
+              <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+
+        <div class="grid_2">
+          <button class="sign-up" onclick="document.getElementById('signup').style.display='block'">Sign Up</button>
+        </div>
+
+        <div id="signup" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="formContainer">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+              </label>
+
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+              <div class="clearfix">
+                <button type="submit" class="signup">Sign Up</button>
+                <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <nav class="grid_2">
+          <div id= "homepageSidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closeBtn" onClick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./product.html">Project Vision</a>
+            <a href="./pricing.html">Pricing</a>
+            <a href="#about" class="active">About Us</a>
+            <a href="./community.html">Community</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+
+          <div id="main">
+            <a href="javascript:void(0)" class="btn openBtn" onClick="openNav()">&#9776;</a>
+          </div>
+        </nav>
+
+      </div>
+
+  	</header>
+
+  	<main>
+  		<div class="heroImg aboutImg">
+  			<div class="heroText">
+          <h1 class="heroTitle">About Us</h1>
+          <h3>Learn about our company and the stories behind our dedicated team</h3>
+  			</div>
+  		</div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="grid_2 small-hidden"></div>
+          <div class="grid_8 quote">
+            <h1>"We're bringing accurate analysis to every level of football whilst removing all of the time-consuming parts to give coaches more time to work with their team"</h1>
+            <h2>Javier Gorodi - CEO Vision Sports Analysis</h2>
+          </div>
+          <div class="grid_2 small-hidden"></div>
+        </div>
+
+        <div class="aboutStrip">
+          <div class="row">
+            <div class="grid_8 companyAbout fadeBlackLeft">
+              <h2>The Origin Story</h2>
+              <p>The idea for Vision Sports Analysis was born when company co-founder and CEO Javier started a voluntary role at Bristol Rovers Woman F.C as a sports analyst. He built his own analysis system watching videos of the games and creating an advanced excel spreadsheet to record statistics and information. This led to the idea to create a software program that does away with any time-consuming manual tagging, in order to provide highly accurate statistics in a fraction of the time from recorded footage.</p>
+            </div>
+            <div class="grid_4 iconCenter">
+              <img src="./img/focus.png" alt="focus icon" class="icons">
+            </div>
+          </div>
+        </div>
+
+        <div class="aboutStrip">
+          <div class="row">
+            <div class="grid_4 iconCenter small-hidden medium-hidden">
+              <img src="./img/strategy.png" alt="strategy icon" class="icons">
+            </div>
+            <div class="grid_8 companyAbout fadeBlackRight">
+              <h2>The Company's Vision</h2>
+              <p>The company was founded in June of 2020, when Javier teamed up with Felix, who oversaw developing this cutting-edge program, and Tom, who oversaw developing the website to allow this software to be accessible for users. The team shared the aim of bringing this excellent analysis tool to teams of all levels, that was previously exclusive to the professional level, and to give coaches more time for the most important part of their job, spending time working with their players. In addition, the team wanted to create a platform where coaches would be able to gain access to a library of great session ideas and join a community where individuals could share and discuss coaching plans.</p>
+            </div>
+            <div class="grid_4 iconCenter large-hidden">
+              <img src="./img/strategy.png" alt="strategy icon" class="icons">
+            </div>
+          </div>
+        </div>
+
+        <div class="aboutStrip">
+          <div class="row">
+            <div class="grid_8 companyAbout fadeBlackLeft">
+              <h2>What's next?</h2>
+              <p>Here at Vision Sports Analysis we are working hard to continue to develop our program and website to deliver the highest possible quality tool that will help you maximise your team’s potential. The future goal is to bring this break-through experience to as many teams as possible in a range of sports and countries.</p>
+            </div>
+            <div class="grid_4 iconCenter">
+              <img src="./img/data.png" alt="data icon" class="icons">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="grid_2 small-hidden"></div>
+          <div class="grid_8 quote2">
+            <h1>Ground-breaking software to give you the future of sports analysis!</h1>
+          </div>
+          <div class="grid_2 small-hidden"></div>
+        </div>
+
+        <div class="row">
+          <div class="grid_4">
+            <div class="card">
+              <img src="./img/jav.jpg" alt="Javier">
+              <div class="cardContainer">
+                <h2>Javier Gorodi</h2>
+                <p class="cardTitle">CEO &amp; Founder</p>
+                <p>Javier has been coaching football for over 10 years and has worked with many players from grassroots to youth international players. He built his own tagging analysis program which gave him the idea to develop an advanced software with the potential to analyse footage and provide game statistics to coaches and analysts.</p>
+                <p>Javier teamed up with Felix and Tom, forming Vision Sports Analysis in the aim to provide sports clubs, at all levels, the analysis tools to develop their game like the professionals.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid_4">
+            <div class="card">
+              <img src="./img/tom.jpg" alt="Tom">
+              <div class="cardContainer">
+                <h2>Tom Galliford</h2>
+                <p class="cardTitle">COO, Founder &amp; Website Design</p>
+                <p>Tom graduated from the University of Nottingham with a Masters degree in Mechanical Engineering and then taught himself website development after graduating. Sport is a passion and as a result Tom has been part of many sport's teams throughout his life.</p>
+                <p>Tom met Javier whilst working together in Morzine, France, where they had a shared passion for team sports and sports analysis. On returning to England, they teamed up with Felix and followed the team's shared passion to start up Vision Sports Analysis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid_4">
+            <div class="card">
+              <img src="./img/felix.png" alt="Felix">
+              <div class="cardContainer">
+                <h2>Felix</h2>
+                <p class="cardTitle">CTO, Founder &amp; Software</p>
+                <p>Felix is a statistician who eagerly awaits the publication of his papers to finalise his PhD-work at the Ludwig-Maximilian-University of Munich. Felix also leads a team of data scientists at Swiss International Air Lines and has extensive knowledge of revenue management and its applications in the transport industry.</p>
+                <p>His passion for data and modelling, especially computer vision in sports, is fueled by the recent achievements in the field of machine learning and AI. His main objective is to enable the company's innovative approach to data-driven decision support for coaching.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  	</main>
+
+  	<footer>
+      <div class="row">
+
+        <div class="grid_3 sitemap">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Project Vision</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="grid_3 sitemap">
+          <ul>
+            <li><a href="./community.html">Community</a></li>
+            <li><a href="./articles.html">Articles Library</a></li>
+            <li><a href="./sessions.html">Session Library</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="grid_2 small-hidden medium-hidden"></div>
+
+        <div class="grid_4 social">
+          <h3>Vision Sports Analysis</h3> <!-- replace with logo -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/VisionSanalysis" target="_blank" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/visionsportsanalysis" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCJMlMpmzlQEu4GajwD4Kb8w%3Fview_as%3Dsubscriber%26fbclid%3DIwAR2nHlU3dbL7-hqOFlxXmWkXJ-7Jcb5nbASaOFx1qdFkIwiiYnQ-AO9zPuc&h=AT0xfhArbcptgBNAmVTzAsX513XvX2G_WVdCe6Vv3ESGJ0VikAcWCQ7AUiXtu38A7yjB9ChOfskvEZMcL95c4cQ9toLPKFj47XTWEYZZSztoNjjZm_5NbcEVr2TnQyWmi1kXY45_ZNiAppPC1hK3iw" target="_blank" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./javascript/sidebar.js"></script>
+    
+  </body>
+</html>

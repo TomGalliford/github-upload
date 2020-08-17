@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product description page for our advanced software for analysing football matches and training sessions for coaches, players and clubs looking to use stat-based information to improve their team's performance. Also a centre for a coaching community allowing coaches to discuss and share training sessions">
+    <meta name="keywords" content="Football,Analysis,Analytics,Statistics,Stats,Video,Track,Match,Improve,Improvement,Coach,Accurate,Tactics,Intelligent,Train">
+    <meta name="Author" content="Tom Galliford">
+    <title>Vision Sports Analysis</title>
+    <link href="./css/normalize.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="./css/grid.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header class="jumbotron">
+
+      <div class="row">
+
+        <div class="grid_4">
+          <h1 class="logo">Vision Sports Analysis</h1> <!-- replace with logo -->
+        </div>
+
+        <div class="grid_2 small-hidden medium-hidden"></div>
+
+        <div class="grid_2">
+          <button class="log-in" onclick="document.getElementById('login').style.display='block'">Login</button>
+        </div>
+
+        <div id="login" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="./img/avatars.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="formContainer">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+
+              <button type="submit">Login</button>
+              
+            </div>
+
+            <div class="formContainer">
+              <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+
+        <div class="grid_2">
+          <button class="sign-up" onclick="document.getElementById('signup').style.display='block'">Sign Up</button>
+        </div>
+
+        <div id="signup" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="formContainer">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+              </label>
+
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+              <div class="clearfix">
+                <button type="submit" class="signup">Sign Up</button>
+                <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <nav class="grid_2">
+          <div id= "homepageSidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closeBtn" onClick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="#product"  class="active">Project Vision</a>
+            <a href="./pricing.html">Pricing</a>
+            <a href="./about.html">About Us</a>
+            <a href="./community.html">Community</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+
+          <div id="main">
+            <a href="javascript:void(0)" class="btn openBtn" onClick="openNav()">&#9776;</a>
+          </div>
+        </nav>
+
+      </div>
+
+    </header>
+
+    <main>
+      <div class="heroImg productImg">
+        <div class="heroText">
+          <h1 class="heroTitle">Project Vision</h1>
+          <h3>Learn more about our cutting-edge technology for analysing football games which saves you hours of time whilst giving highly accurate statistics for you to use</h3>
+        </div>
+      </div>
+
+      <div class="productStrip">
+        <div class="row">
+          <div class="grid_6 info fadeBlackLeft">
+            <p>Here at Vision Sports Anaylsis we want to give you an advanced tool that was previously only for the elite, professional clubs at the top of the English Football Leagues. Using our software we want to provide your team with the stats which you need to identify strengths and areas of weakness, so you know what to work on in training to improve as a team. At the same time we want to ensure that our program is as simple and easy to use as possible to save you time which you can spend with your team.</p>
+          </div>
+
+          <div class="grid_1 small-hidden medium-hidden"></div>
+
+          <div class="grid_5 imgBlock img1"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <video width="400" controls>
+          <source src="#" type="video/">
+          Your browser does not supprt this video.
+        </video>
+      </div>
+
+      <div class="howStrip">
+        <div class="row">
+          <div class="grid_12 info">
+            <h3>How it works</h3>
+            <p>We aimed to make it as simple as possible for you to experience our Vision:</p>
+            <ol>
+              <li>Select which of our subscription tiers suits your team's needs best and select whether you would like to pay monthly or get the full year-long season at a discounted price</li>
+              <li>Set up your team's dashboard and list each player in your team (individual player stats available in the Pro and Elite subscription tiers)</li>
+              <li>For each match upload the footage of the game using the upload button on your team dashboard</li>
+              <li>Sit back whilst our software analyses the footage and automatically returns the stats to you</li>
+              <li> Visit our community page of like-minded coaches for session ideas to target areas of weakness and help your team develop</li> 
+            </ol>
+            <a href="./pricing.html" class="btn pageBtn">Compare subscription tiers</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="productStrip">
+        <div class="row">
+          <div class="grid_5 imgBlock img2"></div>
+
+          <div class="grid_1 small-hidden medium-hidden"></div>
+
+          <div class="grid_6 info fadeBlackRight">
+            <p>We are currently offering a free trial for your club to test out our software and see if it is what your club is looking for. Simply sign up to the tier which is most suited to your club and you won't be charged during the first two weeks so you can get to know our program before committing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add reviews section in here -->
+
+      <div class="row sessionRow">
+        <div class="grid_4"></div>
+        <div class="grid_8 shareSession fadeBlackLeft">
+          <p>If you have any questions about our product and how it works, get in contact with us via email or give us a call</p>
+          <a href="./contact.html" class="btn pageBtn">Contact Us</a>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="row">
+
+        <div class="grid_3 sitemap">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Project Vision</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="grid_3 sitemap">
+          <ul>
+            <li><a href="./community.html">Community</a></li>
+            <li><a href="./articles.html">Articles Library</a></li>
+            <li><a href="./sessions.html">Session Library</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="grid_2 small-hidden medium-hidden"></div>
+
+        <div class="grid_4 social">
+          <h3>Vision Sports Analysis</h3> <!-- replace with logo -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/VisionSanalysis" target="_blank" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/visionsportsanalysis" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCJMlMpmzlQEu4GajwD4Kb8w%3Fview_as%3Dsubscriber%26fbclid%3DIwAR2nHlU3dbL7-hqOFlxXmWkXJ-7Jcb5nbASaOFx1qdFkIwiiYnQ-AO9zPuc&h=AT0xfhArbcptgBNAmVTzAsX513XvX2G_WVdCe6Vv3ESGJ0VikAcWCQ7AUiXtu38A7yjB9ChOfskvEZMcL95c4cQ9toLPKFj47XTWEYZZSztoNjjZm_5NbcEVr2TnQyWmi1kXY45_ZNiAppPC1hK3iw" target="_blank" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./javascript/sidebar.js"></script>
+    
+  </body>
+</html>
